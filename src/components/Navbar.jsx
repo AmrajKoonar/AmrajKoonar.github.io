@@ -36,6 +36,7 @@ const Navbar = () => {
         alignItems: 'center',
         maxWidth: '1200px',
         margin: '0 auto',
+        cursor: 'pointer'
       }}>
         <Link to="home" smooth={true} duration={500} className="nav-link">
           <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>AMRAJ KOONAR</h1>

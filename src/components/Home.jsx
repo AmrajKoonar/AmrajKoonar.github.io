@@ -48,31 +48,23 @@ const Home = () => {
           & web development, problem-solving, and creating innovative
           projects. Always eager to learn, build, and grow!
         </motion.p>
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }} >
 
             {/* ----------------------------- BUTTONS ----------------------------------------------------------*/}
-            <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={{
-                hidden: { opacity: 0 },
-                visible: {
-                    opacity: 1,
-                    transition: {
-                        delayChildren: 3.5,  
-                        staggerChildren: 0.3,  // 0.3s delay between each button
-                    },
-                },
-            }}
-            style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}
-        >
+          <motion.div
+          initial={{ opacity: 0 }}                        
+          animate={{ opacity: 1 }}                        
+          transition={{ delay: 3.5, duration: 1 }}     
+          style={{ 
+            display: 'flex', 
+            gap: '1rem', 
+            justifyContent: 'center' 
+          }}
+        > 
         {["ABOUT", "PROJECTS", "RESUME", "CONTACT"].map((text, index) => (
             <motion.button
             key={index}
-            variants={{
-                hidden: { opacity: 0, y: 20 },
-                visible: { opacity: 1, y: 0 },
-            }}
+
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="btn"
