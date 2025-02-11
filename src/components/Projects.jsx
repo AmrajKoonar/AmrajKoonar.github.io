@@ -12,7 +12,7 @@ const Projects = () => {
       description: 'Developed a React-based trivia game with animated UI, featuring NFL, NBA, MLB, and EPL questions.',
       tech1: "React",
       tech2: "JavaScript",
-      tech3: "balldontlie API",
+      tech3: "BallDontLie API",
       link: 'https://github.com/AmrajKoonar/sports-trivia-website'
     },
     {
@@ -43,10 +43,10 @@ const Projects = () => {
     }}>
       <motion.div
         className="container"
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 30 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -71,8 +71,10 @@ const Projects = () => {
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.1 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.1}}
+              viewport={{ once: false }}
+
               style={{
                 background: 'rgba(255, 255, 255, 0.05)',
                 borderRadius: '15px',
