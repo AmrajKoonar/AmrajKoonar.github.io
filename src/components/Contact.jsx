@@ -1,0 +1,61 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import githubIMG from '../assets/social_imgs/github_icon.svg';
+import linkedinIMG from '../assets/social_imgs/LinkedIn_icon.svg';
+import emailIMG from '../assets/social_imgs/email_logo.png';
+
+const Contact = () => {
+
+    const socials = [
+    {
+        name: 'GitHub',
+        src: githubIMG,
+        link: 'https://github.com/AmrajKoonar'
+    },
+    {
+        name: 'LinkedIN',
+        src: linkedinIMG,
+        link: 'https://www.linkedin.com/in/amraj-koonar/'
+    },
+    {
+        name: 'Email',
+        src: emailIMG,
+        link: 'mailto:ask36@sfu.ca'
+    }
+    ];
+
+  return (
+    <section id="contact" style={{
+      minHeight: '100vh',
+      padding: '6rem 2rem',
+      background: 'var(--gradient-bg)'
+    }}>
+      <motion.div
+        className="container"
+        initial={{ opacity: 0, y: 30 }}
+        transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+      >
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          style={{
+            fontSize: '3rem',
+            marginBottom: '3rem',
+            textAlign: 'center'
+          }}
+        >
+          Contact me!
+        </motion.h2>
+
+
+
+
+      </motion.div>
+    </section>
+  );
+};
+
+export default Contact;
