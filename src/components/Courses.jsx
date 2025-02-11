@@ -66,7 +66,7 @@ const Courses = () => {
       padding: '6rem 2rem',
       background: 'var(--gradient-bg)'
     }}>
-    <motion.div
+      <motion.div
         className="container"
         initial={{ opacity: 0, y: 30 }}
         transition={{ duration: 0.2 }}
@@ -74,14 +74,14 @@ const Courses = () => {
         viewport={{ once: false }}
       >
         <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.1 }}
-            style={{
-                fontSize: '3rem',
-                marginBottom: '3rem',
-                textAlign: 'center'
-            }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.1 }}
+          style={{
+            fontSize: '3rem',
+            marginBottom: '3rem',
+            textAlign: 'center'
+          }}
         >
           Relevant Academic Work
         </motion.h2>
@@ -92,7 +92,7 @@ const Courses = () => {
           gap: '2rem',
           padding: '1rem'
         }}>
-          {courses.map((courses, index) => (
+          {courses.map((course, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -120,8 +120,8 @@ const Courses = () => {
               {/* Image Container */}
               <div style={{ width: '100%', height: '110px', overflow: 'hidden' }}>
                 <img
-                  src={courses.src}
-                  alt={courses.class}
+                  src={course.src}
+                  alt={course.class}
                   style={{
                     width: '100%',
                     height: '100%',
@@ -137,7 +137,7 @@ const Courses = () => {
                 padding: '0 1rem',
                 textAlign: 'center'
               }}>
-                {courses.class}
+                {course.class}
               </h3>
 
               {/* Tech Tags */}
@@ -146,41 +146,20 @@ const Courses = () => {
                 justifyContent: 'center',
                 gap: '0.5rem',
                 paddingBottom: '0.5rem'
-                
               }}>
-                <span style={{
-                  background: '#6c63ff',
-                  color: '#fff',
-                  padding: '0.4rem 0.7rem',
-                  borderRadius: '10px',
-                  fontSize: '0.7rem',
-                  fontWeight: 'bold',
-                  height: '1.8rem'
-                }}>
-                  {courses.tag1}
-                </span>
-                <span style={{
-                  background: '#ff6b6b',
-                  color: '#fff',
-                  padding: '0.4rem 0.7rem',
-                  borderRadius: '10px',
-                  fontSize: '0.7rem',
-                  fontWeight: 'bold',
-                  height: '1.8rem'
-                }}>
-                  {courses.tag2}
-                </span>
-                <span style={{
-                  background: '#ffbd69',
-                  color: '#fff',
-                  padding: '0.4rem 0.7rem',
-                  borderRadius: '10px',
-                  fontSize: '0.7rem',
-                  fontWeight: 'bold',
-                  height: '1.8rem'
-                }}>
-                  {courses.tag3}
-                </span>
+                {[course.tag1, course.tag2, course.tag3].map((tag, i) => (
+                  <span key={i} style={{
+                    background: '#6c63ff',
+                    color: '#fff',
+                    padding: '0.4rem 0.7rem',
+                    borderRadius: '10px',
+                    fontSize: '0.7rem',
+                    fontWeight: 'bold',
+                    height: '1.8rem'
+                  }}>
+                    {tag}
+                  </span>
+                ))}
               </div>
 
               {/* Description */}
@@ -190,12 +169,12 @@ const Courses = () => {
                 textAlign: 'center',
                 flex: 1
               }}>
-                {courses.description}
+                {course.description}
               </p>
 
               {/* Button */}
               <motion.a
-                href={courses.link}
+                href={course.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
