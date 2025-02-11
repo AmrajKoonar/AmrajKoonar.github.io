@@ -52,7 +52,7 @@ const About = () => {
         initial={{ opacity: 0, y: 20 }}  
         transition={{ duration: 1  }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         >
         <motion.h2 
             initial={{ opacity: 0, y: 20 }}  
