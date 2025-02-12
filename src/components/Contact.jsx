@@ -22,7 +22,7 @@ const Contact = () => {
     <section
       id="contact"
       style={{
-        minHeight: '100vh',
+        minHeight: '50vh',
         padding: '6rem 2rem',
         background: 'var(--gradient-bg)'
       }}

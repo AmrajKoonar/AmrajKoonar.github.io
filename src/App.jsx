@@ -5,7 +5,7 @@ import Projects from './components/Projects';
 import Courses from './components/Courses';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
-import Resume from './components/Footer';
+import Footer from './components/Footer';
 
 function App() {
   return (
