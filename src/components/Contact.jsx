@@ -136,12 +136,12 @@ const Contact = () => {
           >
             {[
               { text: 'EMAIL', link: 'mailto:ask36@sfu.ca' },
-              { text: 'RESUME', link: '#' } 
+              { text: 'RESUME', link: '/resume' } 
             ].map((item, index) => (
               <motion.a
                 key={index}
                 href={item.link}
-                target="_blank"
+                
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
