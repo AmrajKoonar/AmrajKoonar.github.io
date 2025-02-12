@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import githubIMG from '../assets/social_imgs/github_icon.svg';
 import linkedinIMG from '../assets/social_imgs/LinkedIn_icon.svg';
+import { Link } from 'react-scroll';
 
 const Contact = () => {
   const socials = [
@@ -136,12 +137,11 @@ const Contact = () => {
           >
             {[
               { text: 'EMAIL', link: 'mailto:ask36@sfu.ca' },
-              { text: 'RESUME', link: '/resume' } 
+              { text: 'RESUME', link: '#resume' } 
             ].map((item, index) => (
               <motion.a
                 key={index}
                 href={item.link}
-                
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
