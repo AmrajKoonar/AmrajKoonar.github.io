@@ -120,7 +120,37 @@ const Contact = () => {
               </span>
             </motion.a>
           ))}
+
+        
+
+        
+
+        <motion.div
+        initial={{ opacity: 0 }}                        
+        animate={{ opacity: 1 }}                        
+        transition={{ duration: 1 }}     
+        style={{ 
+            display: 'flex', 
+            gap: '1rem', 
+            justifyContent: 'center' 
+        }}
+        > 
+        
+        {["EMAIL", "RESUME", ].map((text, index) => (
+            <motion.button
+            key={index}
+
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="btn"
+            >
+            {text}
+            </motion.button>
+        ))}
         </motion.div>
+        </motion.div>
+        
+
       </motion.div>
     </section>
   );
