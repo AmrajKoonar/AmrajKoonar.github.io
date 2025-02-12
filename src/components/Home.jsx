@@ -62,16 +62,23 @@ const Home = () => {
           }}
         > 
         {["ABOUT", "PROJECTS", "RESUME", "CONTACT"].map((text, index) => (
+          <Link 
+            key={index} 
+            to={text.toLowerCase()}
+            smooth={true} 
+            duration={500} 
+          >
             <motion.button
-            key={index}
-
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="btn"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="btn"
             >
-            {text}
+              {text}
             </motion.button>
+          </Link>
         ))}
+
+
         </motion.div>
 
 
