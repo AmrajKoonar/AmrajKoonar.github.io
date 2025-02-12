@@ -171,8 +171,9 @@ const Projects = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ 
-                  scale: 1.05 
-                  //TO DO
+                  scale: 1.05,
+                  background: 'rgb(194, 184, 211)',
+                  color: 'rgb(0, 0, 0)',
                 }}
                 whileTap={{ scale: 0.95 }}
                 style={{
@@ -181,12 +182,12 @@ const Projects = () => {
                   width: '80%',
                   margin: '0 auto 1.5rem',
                   padding: '0.8rem 1rem',
-                  background: '#6c63ff',
+                  background: 'rgb(134, 97, 194)',
                   color: '#fff',
                   borderRadius: '10px',
                   fontWeight: 'bold',
                   textDecoration: 'none',
-                  transition: 'background 0.3s ease-in-out'
+                  transition: '0s'
                 }}
               >
                 VIEW GITHUB
