@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Resume = () => {
   return (
@@ -16,7 +17,6 @@ const Resume = () => {
             }}>My Resume
         </h1>
 
-        
         <iframe
             src="/Amraj_Koonar_Resume.pdf" 
             width="65%"
@@ -27,27 +27,34 @@ const Resume = () => {
                 boxShadow: '0px 4px 10px rgba(255, 255, 255, 0.2)' 
             }}
         ></iframe>
-        
-        <a
-            href="/Amraj_Koonar_Resume.pdf"
-            download="Amraj_Koonar_Resume.pdf"
-            style={{
+
+        <motion.a
+        href="/Amraj_Koonar_Resume.pdf"
+        download="Amraj_Koonar_Resume.pdf"
+        style={{
             marginTop: '1.5rem',
             padding: '0.8rem 1.5rem',
             fontSize: '1rem',
-            background: '#7C3AED',
-            color: 'white',
+            background: 'rgb(61, 59, 59)',
+            color: 'rgb(255, 255, 255)',
             textDecoration: 'none',
             borderRadius: '10px',
             fontWeight: 'bold',
-            transition: '0.3s',
-            boxShadow: '0px 5px 15px rgba(124, 58, 237, 0.3)'
-            }}
-            onMouseOver={(e) => e.target.style.filter = 'brightness(1.1)'}
-            onMouseOut={(e) => e.target.style.filter = 'brightness(1)'}
+            transition: '0s',
+            boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.3)'
+        }}
+        whileHover={{ 
+            backgroundColor: 'rgb(255, 255, 255)',
+            color: 'rgb(0, 0, 0)',
+            border: "2px solid #111",
+            
+            scale: 1.05, 
+            filter: 'brightness(1.1)',
+        }} 
+        whileTap={{ scale: 0.95 }}
         >
-            Download Resume
-        </a>
+        Download Resume
+        </motion.a>
         </div>
     </section>
   );
