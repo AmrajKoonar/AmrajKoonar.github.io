@@ -31,7 +31,7 @@ const Projects = () => {
       tech1: "C",
       tech2: "Neovim",
       tech3: "Linux",
-      link: '#'
+      link: 'https://github.com/AmrajKoonar/shell_implementation'
     }
   ];
 
