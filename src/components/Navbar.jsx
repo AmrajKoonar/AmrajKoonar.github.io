@@ -3,17 +3,6 @@ import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 
 const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
 
       <motion.nav
@@ -26,8 +15,8 @@ const Navbar = () => {
         padding: '1rem 2rem',
         zIndex: 1000,
         transition: 'all 0.3s ease',
-        background: scrolled ? 'rgba(26, 26, 46, 0.95)' : 'transparent',
-        backdropFilter: scrolled ? 'blur(10px)' : 'none',
+        background: 'rgba(26, 26, 46, 0.95)',
+        backdropFilter: 'blur(10px)',
       }}
     >
       <div style={{
