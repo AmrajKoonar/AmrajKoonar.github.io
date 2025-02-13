@@ -92,7 +92,6 @@ const Projects = () => {
                 transition: { duration: 0.1 }
               }}
             >
-              {/* Image Container */}
               <div style={{ width: '100%', height: '180px', overflow: 'hidden' }}>
                 <img
                   src={project.src}
@@ -105,7 +104,6 @@ const Projects = () => {
                 />
               </div>
 
-              {/* Title */}
               <h3 style={{
                 fontSize: '1.5rem',
                 margin: '1rem 0',
@@ -115,7 +113,6 @@ const Projects = () => {
                 {project.title}
               </h3>
 
-              {/* Tech Tags */}
               <div style={{
                 display: 'flex',
                 justifyContent: 'center',
@@ -155,7 +152,6 @@ const Projects = () => {
                 </span>
               </div>
 
-              {/* Description */}
               <p style={{
                 marginBottom: '1.5rem',
                 padding: '0 1.5rem',
@@ -165,7 +161,6 @@ const Projects = () => {
                 {project.description}
               </p>
 
-              {/* Button */}
               <motion.a
                 href={project.link}
                 target="_blank"
