@@ -60,7 +60,7 @@ const About = () => {
         viewport={{ once: true }}>
       
       
-      <motion.div  // UNDERLINE ANIMATION
+      <motion.div 
         style={{ 
           textAlign: 'center', 
           display: 'flex', 
@@ -86,7 +86,7 @@ const About = () => {
             About me
         </motion.h2>
 
-        {/* Underline Animation */}
+        
         <motion.div 
             initial={{ scaleX: 0, originX: 0 }} 
             whileInView={{ scaleX: 1 }} 
@@ -119,7 +119,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        {/* LANGUAGES */}
+        
         <div style={{ 
           background: 'rgba(255, 255, 255, 0.05)', 
           borderRadius: '20px', padding: '2rem', 
@@ -182,7 +182,6 @@ const About = () => {
             />
           </motion.div>
           
-          {/* FRAMEWORKS & DEVELOPER TOOLS */}
           <motion.h3 
             initial={{ opacity: 0, y: 20 }} 
             animate={{ opacity: 1, y: 0 }} 

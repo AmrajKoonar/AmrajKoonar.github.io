@@ -117,7 +117,7 @@ const Courses = () => {
                 transition: { duration: 0.1 }
               }}
             >
-              {/* Image Container */}
+              
               <div style={{ width: '100%', height: '110px', overflow: 'hidden' }}>
                 <img
                   src={courses.src}
@@ -130,7 +130,7 @@ const Courses = () => {
                 />
               </div>
 
-              {/* class */}
+              
               <h3 style={{
                 fontSize: '1.3rem',
                 margin: '1rem 0',
@@ -140,7 +140,7 @@ const Courses = () => {
                 {courses.class}
               </h3>
 
-              {/* Tech Tags */}
+            
               <div style={{
                 display: 'flex',
                 justifyContent: 'center',
@@ -182,8 +182,7 @@ const Courses = () => {
                   {courses.tag3}
                 </span>
               </div>
-
-              {/* Description */}
+              
               <p style={{
                 marginBottom: '1.5rem',
                 padding: '0 1.5rem',
@@ -192,8 +191,7 @@ const Courses = () => {
               }}>
                 {courses.description}
               </p>
-
-              {/* Button */}
+              
               <motion.a
                 href={courses.link}
                 target="_blank"

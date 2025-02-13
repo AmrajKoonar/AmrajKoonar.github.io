@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import githubIMG from '../assets/social_imgs/github_icon.svg';
 import linkedinIMG from '../assets/social_imgs/LinkedIn_icon.svg';
-import { Link } from 'react-scroll';
 
 const Contact = () => {
   const socials = [
@@ -124,7 +123,7 @@ const Contact = () => {
             ))}
           </div>
 
-          {/* Buttons (Email & Resume) */}
+          
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

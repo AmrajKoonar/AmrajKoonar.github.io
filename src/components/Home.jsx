@@ -15,7 +15,6 @@ const Home = () => {
       overflow: 'hidden'
     }}>
 
-        {/* ----------------------------- HOMEPAGE INFO ----------------------------------------------------------*/}
       <motion.div
         initial={{ opacity: 0, y: 20 }}  
         animate={{ opacity: 1, y: 0 }}    
@@ -50,7 +49,6 @@ const Home = () => {
         </motion.p>
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }} >
 
-            {/* ----------------------------- BUTTONS ----------------------------------------------------------*/}
           <motion.div
           initial={{ opacity: 0 }}                        
           animate={{ opacity: 1 }}                        
@@ -78,11 +76,7 @@ const Home = () => {
           </Link>
         ))}
 
-
         </motion.div>
-
-
-          
 
         </div>
       </motion.div>
