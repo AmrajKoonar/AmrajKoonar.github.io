@@ -1,4 +1,4 @@
-# 🧑‍💻 Personal Portfolio – Amraj Koonar
+# 🖥️ Personal Portfolio – Amraj Koonar
 
 A fully responsive personal website built to showcase projects, technical coursework, resume, and contact information. Designed with clean UI, animated transitions, and smooth scrolling using Framer Motion and React Scroll.
 
