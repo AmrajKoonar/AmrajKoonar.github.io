@@ -1,17 +1,67 @@
+# 🧑‍💻 Personal Portfolio – Amraj Koonar
 
-# Amraj Koonar Personal Portfolio Website 
+A fully responsive personal website built to showcase projects, technical coursework, resume, and contact information. Designed with clean UI, animated transitions, and smooth scrolling using Framer Motion and React Scroll.
 
-Link: [Personal Portfolio](https://amrajkoonar.github.io/)
+Live here → [amrajkoonar.github.io](https://amrajkoonar.github.io/)
 
-# Why I chose MIT License:
+---
 
-I selected the MIT License because the MIT license has almost no restrictions, offers the ability and freedom for the public to use my code for learning purposes, and I personally like MIT due to the schools popularity and genius.
+## 🎯 Features
 
+- 🏠 **Homepage**: Animated landing page with name, role, and CTA.
+- 👤 **About Me Page**: Brief overview of background, goals, and personal interests.
+- 🧩 **Projects Page**: Highlights featured work with descriptions and links.
+- 📘 **Relevant Coursework**: Section listing major technical courses taken.
+- 📄 **Resume Page**: Downloadable resume in PDF format.
+- ✉️ **Contact Page**: Simple form to reach out directly.
+- 🧭 **Navbar + Footer**: Persistent and responsive site-wide navigation.
+- 💫 **Smooth Animations**: Framer Motion used for subtle, modern UI transitions.
+- 🔀 **Page Navigation**: React Scroll enables seamless jumps across sections.
+- 📱 **Mobile Responsive**: Built with mobile-first principles using Tailwind and CSS modules.
 
-Amraj Koonar
-301559468
-ask36@sfu.ca
-[GitHub](https://github.com/AmrajKoonar)
-[LinkedIn](https://www.linkedin.com/in/amraj-koonar/)
+---
 
+## 🛠️ Tech Stack
 
+- **Framework**: Next.js (React)
+- **Language**: TypeScript
+- **Styling**: TailwindCSS, CSS Modules
+- **Animations**: Framer Motion, React Scroll
+- **Deployment**: GitHub Pages
+
+---
+
+## 🛠️ Setup & Installation
+
+To run this project locally:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/amrajkoonar/amrajkoonar.github.io.git
+cd amrajkoonar.github.io
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Run the Development Server
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+Open your browser and go to:
+```
+http://localhost:3000
+```
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
