@@ -23,9 +23,9 @@ Live here → [amrajkoonar.github.io](https://amrajkoonar.github.io/)
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js (React)
-- **Language**: TypeScript
-- **Styling**: TailwindCSS, CSS Modules
+- **Framework**: React
+- **Language**: JavaScript
+- **Styling**: CSS Modules
 - **Animations**: Framer Motion, React Scroll
 - **Deployment**: GitHub Pages
 
