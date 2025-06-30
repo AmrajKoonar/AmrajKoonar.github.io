@@ -2,7 +2,7 @@
 
 A fully responsive personal website built to showcase projects, technical coursework, resume, and contact information. Designed with clean UI, animated transitions, and smooth scrolling using Framer Motion and React Scroll.
 
-Live here → [amrajkoonar.github.io](https://amrajkoonar.github.io/)
+Live link here → [amrajkoonar.github.io](https://amrajkoonar.github.io/)
 
 ---
 
