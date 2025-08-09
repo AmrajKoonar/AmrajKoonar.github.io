@@ -1,8 +1,10 @@
-# 🖥️ Personal Portfolio – Amraj Koonar
+# Old Personal Portfolio – Amraj Koonar
+
+Note: This is no longer my main and most updated personal portfolio. My main and latest personal portfolio can be found here: [Amraj's New Personal Portfolio](https://github.com/AmrajKoonar/personal-portfolio). The live link for the new personal portfolio website is: [Amraj Koonar](https://amraj-koonar.vercel.app/). 
 
 A fully responsive personal website built to showcase projects, technical coursework, resume, and contact information. Designed with clean UI, animated transitions, and smooth scrolling using Framer Motion and React Scroll.
 
-Live link here → [amrajkoonar.github.io](https://amrajkoonar.github.io/)
+Live link here (Note this is the old website) → [amrajkoonar.github.io](https://amrajkoonar.github.io/)
 
 _Last updated Feb 2025._
 
